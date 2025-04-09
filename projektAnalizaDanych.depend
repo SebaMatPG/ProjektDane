@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1744232949 source:d:\c++\15.02.2021\projektanalizadanych\src\danepogodowe.cpp
+	"DanePogodowe.h"
+
+1744231374 d:\c++\15.02.2021\projektanalizadanych\include\danepogodowe.h
+	<iostream>
+
+1744234733 source:d:\c++\15.02.2021\projektanalizadanych\main.cpp
+	<iostream>
+	<filesystem>
+	"DanePogodowe.h"
+	"Excel.h"
+	"Statystyki.h"
+
+1744221922 d:\c++\15.02.2021\projektanalizadanych\include\pogodadzienna.h
+	<string>
+	"DanePogodowe.h"
+
+1744224404 d:\c++\15.02.2021\projektanalizadanych\include\excel.h
+	<string>
+	"DanePogodowe.h"
+
+1744230515 source:d:\c++\15.02.2021\projektanalizadanych\src\excel.cpp
+	"Excel.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	<algorithm>
+
+1744232756 source:d:\c++\15.02.2021\projektanalizadanych\src\statystyki.cpp
+	"Statystyki.h"
+	"DanePogodowe.h"
+
+1744234566 d:\c++\15.02.2021\projektanalizadanych\include\statystyki.h
+	"DanePogodowe.h"
+
