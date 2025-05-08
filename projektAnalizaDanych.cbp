@@ -35,8 +35,14 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/DanePogodowe.h" />
+		<Unit filename="include/Excel.h" />
+		<Unit filename="include/Sortowanie.h" />
+		<Unit filename="include/Statystyki.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/DanePogodowe.cpp" />
+		<Unit filename="src/Excel.cpp" />
+		<Unit filename="src/Sortowanie.cpp" />
+		<Unit filename="src/Statystyki.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

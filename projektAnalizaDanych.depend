@@ -5,12 +5,15 @@
 1744231374 d:\c++\15.02.2021\projektanalizadanych\include\danepogodowe.h
 	<iostream>
 
-1744234733 source:d:\c++\15.02.2021\projektanalizadanych\main.cpp
+1746692222 source:d:\c++\15.02.2021\projektanalizadanych\main.cpp
 	<iostream>
 	<filesystem>
+	<vector>
 	"DanePogodowe.h"
 	"Excel.h"
 	"Statystyki.h"
+	"Sortowanie.h"
+	"Menu.h"
 
 1744221922 d:\c++\15.02.2021\projektanalizadanych\include\pogodadzienna.h
 	<string>
@@ -27,10 +30,27 @@
 	<sstream>
 	<algorithm>
 
-1744232756 source:d:\c++\15.02.2021\projektanalizadanych\src\statystyki.cpp
+1746691732 source:d:\c++\15.02.2021\projektanalizadanych\src\statystyki.cpp
+	<cmath>
 	"Statystyki.h"
 	"DanePogodowe.h"
 
-1744234566 d:\c++\15.02.2021\projektanalizadanych\include\statystyki.h
+1746691656 d:\c++\15.02.2021\projektanalizadanych\include\statystyki.h
+	<vector>
+
+1746690933 source:d:\c++\15.02.2021\projektanalizadanych\src\sortowanie.cpp
+	"Sortowanie.h"
+	<iostream>
+	<fstream>
+
+1746691258 d:\c++\15.02.2021\projektanalizadanych\include\sortowanie.h
 	"DanePogodowe.h"
+	<vector>
+
+1746639892 d:\c++\15.02.2021\projektanalizadanych\include\menu.h
+	<string>
+
+1746655212 source:d:\c++\15.02.2021\projektanalizadanych\src\menu.cpp
+	<iostream>
+	"Menu.h"
 

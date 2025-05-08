@@ -1,22 +1,21 @@
 #ifndef STATYSTYKI_H
 #define STATYSTYKI_H
-#include "DanePogodowe.h"
+#include <vector>
 
 
 class Statystyki
 {
     public:
         Statystyki();
-        double obliczSredniaOpadow(DanePogodowe dane[]);
-        double obliczMediane();
-        double obliczOdchylenieStandardowe();
-        double obliczMin(DanePogodowe dane[]);
-        double obliczMax(DanePogodowe dane[]);
+        double obliczSrednia(std::vector<double> dane, int wielkosc);
+        double obliczMediane(std::vector<double> dane, int wielkosc);
+        double obliczOdchylenieStandardowe(std::vector<double> dane, int wielkosc);
+        double obliczMin(std::vector<double> dane, int wielkosc);
+        double obliczMax(std::vector<double> dane, int wielkosc);
 
     protected:
 
     private:
-        DanePogodowe dane[366];
 };
 
 #endif // STATYSTYKI_H
