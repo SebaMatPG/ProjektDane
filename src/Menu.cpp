@@ -18,7 +18,6 @@ int Menu::menuOperacja(){
         std::cout << "5. Mediana" << std::endl;
         std::cout << "6. Odchylenie standardowe" << std::endl;
         std::cin >> wybor1;
-        std::cout << wybor1;
     } while (wybor1 < 1 || wybor1 > 6);
 
     return wybor1;
@@ -35,7 +34,7 @@ int Menu::menuDane() {
         std::cout << "6. Maksymalne cisnienie" << std::endl;
         std::cout << "7. Opady" << std::endl;
         std::cin >> wybor2;
-    } while(wybor2 < 1 || wybor2 > 7);
+    } while (wybor2 < 1 || wybor2 > 7);
 
     return wybor2;
 }
@@ -56,6 +55,17 @@ std::string Menu::menuKoniecPrzedzialu() {
     } while (!sprawdzFormatDaty(wybor4));
 
     return wybor4;
+}
+
+int Menu::menuPowrot() {
+    do{
+        std::cout << "Chcesz wrocic do menu?" << std::endl;
+        std::cout << "1. Tak" << std::endl;
+        std::cout << "2. Nie" << std::endl;
+        std::cin >> wybor5;
+    } while (wybor5 != 1 && wybor5 != 2);
+
+    return wybor5;
 }
 
 bool Menu::sprawdzFormatDaty(std::string data) { //czy spe³niony jest format YYYY-MM-DD

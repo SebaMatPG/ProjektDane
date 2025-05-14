@@ -11,6 +11,7 @@ class Menu
         int menuDane();
         std::string menuPoczatekPrzedzialu();
         std::string menuKoniecPrzedzialu();
+        int menuPowrot();
 
 
     protected:
@@ -20,6 +21,7 @@ class Menu
         int wybor2;
         std::string wybor3;
         std::string wybor4;
+        int wybor5;
         bool sprawdzFormatDaty(std::string data);
         bool czyJestCyfra(char znak);
 };
