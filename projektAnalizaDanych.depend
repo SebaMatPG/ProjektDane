@@ -5,7 +5,7 @@
 1744231374 d:\c++\15.02.2021\projektanalizadanych\include\danepogodowe.h
 	<iostream>
 
-1747255805 source:d:\c++\15.02.2021\projektanalizadanych\main.cpp
+1747298845 source:d:\c++\15.02.2021\projektanalizadanych\main.cpp
 	<iostream>
 	<filesystem>
 	<vector>
@@ -38,17 +38,19 @@
 1746691656 d:\c++\15.02.2021\projektanalizadanych\include\statystyki.h
 	<vector>
 
-1746690933 source:d:\c++\15.02.2021\projektanalizadanych\src\sortowanie.cpp
+1747297613 source:d:\c++\15.02.2021\projektanalizadanych\src\sortowanie.cpp
 	"Sortowanie.h"
 	<iostream>
 	<fstream>
 
-1746691258 d:\c++\15.02.2021\projektanalizadanych\include\sortowanie.h
+1747297544 d:\c++\15.02.2021\projektanalizadanych\include\sortowanie.h
 	"DanePogodowe.h"
 	<vector>
-
-1747254878 d:\c++\15.02.2021\projektanalizadanych\include\menu.h
 	<string>
+
+1747298663 d:\c++\15.02.2021\projektanalizadanych\include\menu.h
+	<string>
+	<vector>
 
 1747255077 source:d:\c++\15.02.2021\projektanalizadanych\src\menu.cpp
 	<iostream>

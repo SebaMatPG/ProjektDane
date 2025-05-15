@@ -1,5 +1,8 @@
 #include <iostream>
+#include <vector>
 #include "Menu.h"
+#include "Statystyki.h"
+#include "Sortowanie.h"
 
 Menu::Menu()
 {
@@ -66,6 +69,33 @@ int Menu::menuPowrot() {
     } while (wybor5 != 1 && wybor5 != 2);
 
     return wybor5;
+}
+
+void Menu::wyswietlenieDanych(std::vector<double> daneDoPrezentacji, int wielkoscVektora, int wybor1){
+    Statystyki stat;
+    Sortowanie sorto;
+
+    switch(wybor1){
+        case 1:
+            sorto.sortBabelkowe(daneDoPrezentacji, wielkoscVektora);
+            break;
+        case 2:
+            std::cout << "Minimalna wartosc: " << stat.obliczMin(daneDoPrezentacji, wielkoscVektora) << std::endl;
+            break;
+        case 3:
+            std::cout << "Maksymalna wartosc: " << stat.obliczMax(daneDoPrezentacji, wielkoscVektora) << std::endl;
+            break;
+        case 4:
+            std::cout << "Srednia wartosc: " << stat.obliczSrednia(daneDoPrezentacji, wielkoscVektora) << std::endl;
+            break;
+        case 5:
+            std::cout << "Mediana: " << stat.obliczMediane(daneDoPrezentacji, wielkoscVektora) << std::endl;
+            break;
+        case 6:
+            std::cout << "Odchylenie standardowe: " << stat.obliczOdchylenieStandardowe(daneDoPrezentacji, wielkoscVektora) << std::endl;
+            break;
+
+    }
 }
 
 bool Menu::sprawdzFormatDaty(std::string data) { //czy spe³niony jest format YYYY-MM-DD

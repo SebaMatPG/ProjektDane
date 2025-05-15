@@ -1,7 +1,7 @@
 #ifndef MENU_H
 #define MENU_H
 #include <string>
-
+#include <vector>
 
 class Menu
 {
@@ -12,7 +12,7 @@ class Menu
         std::string menuPoczatekPrzedzialu();
         std::string menuKoniecPrzedzialu();
         int menuPowrot();
-
+        void wyswietlenieDanych(std::vector<double> daneDoPrezentacji, int wielkoscVektora, int wybor1);
 
     protected:
 
