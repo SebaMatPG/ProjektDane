@@ -7,9 +7,8 @@ class Excel
 {
     public:
         Excel();
-
         bool czyPlikIstnieje();
-        std::string zmienFormatDaty(std::string staraData); //TODO: Zmieniæ na private jak skoñczê testowaæ
+        std::string zmienFormatDaty(std::string staraData);
         int wczytajDane(DanePogodowe dane[]);
 
     protected:

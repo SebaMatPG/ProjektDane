@@ -11,7 +11,7 @@ Menu::Menu()
 
 //Klasa ma za zadanie zebranie wszystkich wyborów u¿ytkownika oraz ich walidacje
 
-int Menu::menuOperacja(){
+int Menu::menuOperacja(){ //sprawdzenie jaka operacje chce wykonac uzytkownik
     do{
         std::cout << "Wybierz operacje:" << std::endl;
         std::cout << "1. Sortowanie danych" << std::endl;
@@ -26,7 +26,7 @@ int Menu::menuOperacja(){
     return wybor1;
 }
 
-int Menu::menuDane() {
+int Menu::menuDane() { //sprawdzenie na jakich danych chce dzialac uzytkownik
     do{
         std::cout << "Wybierz zestaw danych: " << std::endl;
         std::cout << "1. Mimimalna temperatura" << std::endl;
@@ -71,7 +71,7 @@ int Menu::menuPowrot() {
     return wybor5;
 }
 
-void Menu::wyswietlenieDanych(std::vector<double> daneDoPrezentacji, int wielkoscVektora, int wybor1){
+void Menu::wyswietlenieDanych(std::vector<double> daneDoPrezentacji, int wielkoscVektora, int wybor1){ //wyswietlenie danych w zaleznosci od tego co chce uzytkownik
     Statystyki stat;
     Sortowanie sorto;
 
@@ -98,7 +98,7 @@ void Menu::wyswietlenieDanych(std::vector<double> daneDoPrezentacji, int wielkos
     }
 }
 
-bool Menu::sprawdzFormatDaty(std::string data) { //czy spe³niony jest format YYYY-MM-DD
+bool Menu::sprawdzFormatDaty(std::string data) { //czy spelniony jest format YYYY-MM-DD
     if (data.size() < 10) return false;
     if (czyJestCyfra(data[0]) && czyJestCyfra(data[1]) && czyJestCyfra(data[2]) && czyJestCyfra(data[3]) && data[4] == '-' && czyJestCyfra(data[5]) && czyJestCyfra(data[6]) && data[7] == '-' && czyJestCyfra(data[8]) && czyJestCyfra(data[9])) return true;
 
@@ -106,5 +106,5 @@ bool Menu::sprawdzFormatDaty(std::string data) { //czy spe³niony jest format YYY
 }
 
 bool Menu::czyJestCyfra(char znak) {
-    return znak >= '0' && znak <= '9'; //Nawi¹zanie do tablicy ASCII
+    return znak >= '0' && znak <= '9'; //Nawiazanie do tablicy ASCII
 }

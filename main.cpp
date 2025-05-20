@@ -9,11 +9,12 @@
 
 int main()
 {
+    //utworzenie obiektow
     Excel excel;
     Menu menu;
     Sortowanie sorto;
-
     DanePogodowe dane[366];
+
     if(!excel.czyPlikIstnieje()) {
         std::cout << "Plik nie istnieje";
         return 0;
@@ -25,11 +26,12 @@ int main()
     bool czyProgramMaPowtorzyc = true;
 
     do{
+        //zbieranie od uzytkownika informacji
         int wybor1 = menu.menuOperacja();
         int wybor2 = menu.menuDane();
         std::string wybor3 = menu.menuPoczatekPrzedzialu();
         std::string wybor4 = menu.menuKoniecPrzedzialu();
-        std::vector<double> daneDoPrezentacji = sorto.filtrowanie(dane ,wybor2, wybor3, wybor4);
+        std::vector<double> daneDoPrezentacji = sorto.filtrowanie(dane ,wybor2, wybor3, wybor4); //przetwarzanie danych na podstawie tych informacji
 
         int wielkoscVektora = daneDoPrezentacji.size();
         if (wielkoscVektora == 0) {
@@ -39,7 +41,7 @@ int main()
 
         menu.wyswietlenieDanych(daneDoPrezentacji, wielkoscVektora, wybor1);
 
-        if (menu.menuPowrot() == 2) czyProgramMaPowtorzyc = false;
+        if (menu.menuPowrot() == 2) czyProgramMaPowtorzyc = false; //sprawdzenie czy uzytkownik chce ponownie uruchomic program
     } while (czyProgramMaPowtorzyc);
 
 

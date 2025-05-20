@@ -9,7 +9,7 @@ class DanePogodowe
         DanePogodowe(std::string data, double minTemp, double maxTemp, double srTemp, double minCisnienie, double maxCisnienie, double srCisnienie, double opady);
         DanePogodowe();
 
-        std::string pobierzDate(); //TODO: Usun¹æ zbêdne gettery jak ju¿ bêdzie gotowe
+        std::string pobierzDate();
         double pobierzMinTemp();
         double pobierzMaxTemp();
         double pobierzSrTemp();

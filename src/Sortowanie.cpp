@@ -8,15 +8,15 @@ Sortowanie::Sortowanie()
 }
 
 void Sortowanie::sortBabelkowe (std::vector<double> tablica, int rozmiarTablicy) {
-    for (int i = 0; i < rozmiarTablicy - 1; i++) {
-        for (int j = 0; j < rozmiarTablicy - i - 1; j++) {
+    for (int i = 0; i < rozmiarTablicy - 1; i++) { //-1 poniewaz nie da sie sprawdzic ostatniego i ostatniego+1 elementu
+        for (int j = 0; j < rozmiarTablicy - i - 1; j++) { //-i ze wzgledow optymalizacynych
             if (tablica[j] > tablica[j+1]) {
                 std::swap(tablica[j], tablica[j+1]);
             }
         }
     }
 
-    std::ofstream plik("dane.csv"); //To pewnie bêdzie w innym miejscu
+    std::ofstream plik("dane.csv");
 
     for (int k = 0; k < rozmiarTablicy; k++) {
         plik << tablica[k] << "\n";
@@ -33,7 +33,7 @@ std::vector<double> Sortowanie::filtrowanie(DanePogodowe dane[], int wybor2, std
     switch (wybor2) {   //switch ma za zadanie wydobycie danych które potem zostana odpowiednio uzyte
     case 1:
         for (int i = 0; i < 366; i++) {
-            if(dane[i].pobierzDate() >= wybor3 && dane[i].pobierzDate() <= wybor4){
+            if(dane[i].pobierzDate() >= wybor3 && dane[i].pobierzDate() <= wybor4){ //sprawdzenie przedzialu dat
                 daneDoPrezentacji.push_back(dane[i].pobierzMinTemp());
             }
         }

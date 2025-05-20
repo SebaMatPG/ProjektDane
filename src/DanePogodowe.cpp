@@ -4,6 +4,7 @@ DanePogodowe::DanePogodowe(std::string data, double minTemp, double maxTemp, dou
 DanePogodowe::DanePogodowe() : data(""), minTemp(0), maxTemp(0), srTemp(0),
                                 minCisnienie(0), maxCisnienie(0), srCisnienie(0), opady(0) {}
 
+//gettery
 std::string DanePogodowe::pobierzDate() {
     return data;
 }

@@ -32,12 +32,12 @@ int Excel::wczytajDane(DanePogodowe dane[]) {
     }
 
     while (std::getline(plik, linia)) {
-        std::replace(linia.begin(), linia.end(), ',', '.');
+        std::replace(linia.begin(), linia.end(), ',', '.'); //zmiana formatu danych
         std::stringstream ss(linia);
         std::string data;
         double minTemp, maxTemp, srTemp, minCisnienie, maxCisnienie, srCisnienie, opady;
 
-        std::getline(ss, data, ';');
+        std::getline(ss, data, ';'); //wprowadzenie danych do obiektow
         data = zmienFormatDaty(data);
         ss >> minTemp; ss.ignore();
         ss >> maxTemp; ss.ignore();
